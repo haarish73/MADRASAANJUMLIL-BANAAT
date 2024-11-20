@@ -1,0 +1,532 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MADRASAANJUMLIL-BANAAT</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    /* Marquee Effect using CSS Animation */
+    .container {
+      margin-right: 0;
+      margin-top: 0;
+    }
+
+    .carousel-item img {
+    object-fit: cover; /* Ensures images cover the area without distortion */
+    width: 100%; /* Makes the image stretch across the full width of the carousel */
+    height: 400px; /* You can adjust this value to your desired height */
+    margin-top: 2px;
+  }
+    .admission-btn {
+      padding: 15px 30px;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: white;
+      background-color: #04AA6D;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .admission-btn:hover {
+      background-color: #028A5D;
+    }
+
+    .blink {
+      animation: blinker 1.5s linear infinite;
+      color: red;
+      font-family: Arial, sans-serif;
+    }
+
+    @keyframes blinker {
+      100% {
+        opacity: 0;
+      }
+    }
+
+    .container-x {
+      box-shadow: 0 1px 3px rgba(0, 0, 0, .1);
+      border: 1px solid rgba(0, 0, 0, .15);
+      background-color: #ffffff;
+      border-radius: 4px;
+      /* padding: 10px; */
+      width: 100vw;
+      margin-right: 0;
+      margin-left: 0;
+      margin-top: 1px;
+
+    }
+    .tablex{
+      position: relative;
+      animation-name: example;
+      animation-duration: 4s;
+    }
+    @keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:100px; top:0px;}
+  50%  {background-color:blue; left:200px; top:40px;}
+  75%  {background-color:green; left:0px; top:40px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+  </style>
+
+</head>
+
+<body style="background-color: rgb(0, 128, 0);">
+
+  <nav class="navbar navbar-expand-lg bg-dark py-3">
+    <div class="container-fluid">
+      <!-- Navbar Toggler Button (for small screens) -->
+      <a class="navbar-brand" href="#" style="color: white;">MADRASA ANJUM LIL-BANAAT</a>
+      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar Content -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent"
+        style="margin-left: 15%; justify-content: space-between;">
+        <ul class="navbar-nav ms-0 mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active fs-5 fw-bold" aria-current="page" href="#" style="color: white;">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active fs-5 fw-bold" href="navSection-item/aboutUs.html" style="color: white;">About
+              Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active fs-5 fw-bold" href="navSection-item/admission.html"
+              style="color: white;">Admission</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active fs-5 fw-bold" href="contact.html" style="color: white;">Contact Us</a>
+          </li>
+        </ul>
+
+        <!-- Login and Register links aligned to the right -->
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active fs-5 fw-bold" href="navSection-item/index.html" style="color: white;">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active fs-5 fw-bold" href="navSection-item/contact.html"
+              style="color: white;">Register</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </nav>
+
+  <!--  -->
+
+  <div class="container-x" style="background-color: black;">
+    <marquee class="blink" scrollamount="5">
+      <a href="navSection-item/admission.html">
+      <button class="admission-btn text-light">Hurry up ! for Admission 2024-2025</button>
+    </a>
+    </marquee>
+  </div>
+
+
+  
+  <!-- carousel - body -->
+  <div id="carouselExampleCaptions" class="carousel slide" style="width: 100%; height: 50%; margin: 0 auto;">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+        aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active text-center">
+        <a href="" style="text-decoration: none; color: black;">
+          <img src="demo2.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block"></div>
+        </a>
+      </div>
+      <div class="carousel-item text-center">
+        <a href="" style="text-decoration: none; color: white;">
+          <img src="demo3.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block"></div>
+        </a>
+      </div>
+      <div class="carousel-item text-center">
+        <a href="" style="text-decoration: none; color: white;">
+          <img src="demo4.webp" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block"></div>
+        </a>
+      </div>
+      <div class="carousel-item text-center">
+        <a href="" style="text-decoration: none; color: white;">
+          <img src="pexels-a-darmel-8164749.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block"></div>
+        </a>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+
+
+  <!-- image section -->
+  <h1 style="align-items: center; justify-content: center; display: flex; color: white;">Details For New Admission</h1>
+
+  <div class="card d-inline" style="width: 20%; height: 30%; margin-left: 10%;">
+    <div class="card-body">
+      <!-- Using flex to align images side by side -->
+      <div style="display: flex; justify-content: space-evenly;">
+        <img src="urdu.jpg" class="card-img-top" alt="Urdu Image" style="width: 38%; height: auto;">
+        <img src="eglish-1.jpg" class="card-img-top" alt="English Image"
+          style="width: 38%; height: auto; margin-left: 2px;">
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <h2 style="justify-content: center; align-items: center; display: flex; color: white;"><b>COURSE OFFERED in (Quranic Recitation)</b>
+  </h2>
+  <br>
+  <div class="row" style="display: flex; justify-content: space-evenly;">
+    <div class="col-md-3">
+      <div class="card" style="width: 100%;">
+        <img src="quranic recitation image/pexels-rdne-7249751.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5>Quranic Recitation </h5>
+          <p class="card-text">Noorani Qayedah</p>
+          <a href="Course-offered/qcard1.html" class="btn btn-primary">Read More</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card" style="width: 100%;">
+        <img src="quranic recitation image/pexels-rdne-7249185.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Quranic Recitation</h5>
+          <p class="card-text">Nazrah Quran Majeed</p>
+          <a href="Course-offered/qcard2.html" class="btn btn-primary">Read More</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card" style="width: 100%;">
+        <img src="quranic recitation image/pexels-rdne-7249738.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Quranic Recitation</h5>
+          <p class="card-text">Deeniyat</p>
+          <a href="Course-offered/qcard3.html" class="btn btn-primary">Read More</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <br>
+  <h3 style="justify-content: space-evenly;  display: flex; color: white;"><b>COURSE OFFERED in (Aalimiyat)</b></h3>
+
+  <br>
+  <div class="container" style="margin-left: 10%; justify-content: space-evenly;">
+   
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card" style="width: 100%;">
+          <img src="AalimiyatImages/pexels-a-darmel-8164399.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Aalimiyat</h5>
+            <p class="card-text">Quran: Nazrah Quran Majeed</p>
+            <a href="Course-offered/NazrahQuranMajeed.html" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card" style="width: 100%;">
+          <img src="AalimiyatImages/pexels-rdne-7249195.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Aalimiyat</h5>
+            <p class="card-text">Hadees: Mahfuzat (Hissah Awal)</p>
+            <a href="Course-offered/MahfuzatHissahAwal.html" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card" style="width: 100%;">
+          <img src="AalimiyatImages/pexels-rdne-7249288.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Aalimiyat</h5>
+            <p class="card-text">Seerat: Humare Huzoor (SAW)</p>
+            <a href="Course-offered/card3.html" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card" style="width: 100%;">
+          <img src="AalimiyatImages/pexels-tayebmezahdia-318451.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Aalimiyat</h5>
+            <p class="card-text">Fiqah: Behesteezewar (Hissah Awal)</p>
+            <a href="Course-offered/card4.html" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second Row of 4 Cards -->
+    <div class="row mt-3">
+      <div class="col-md-3">
+        <div class="card" style="width: 100%;">
+          <img src="AalimiyatImages/pexels-gr-stocks-1716147-3360048.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Aalimiyat</h5>
+            <p class="card-text">Nahu: Asaan Nahu (Hissah Awal)</p>
+            <a href="Course-offered/card5.html" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card" style="width: 100%;">
+          <img src="AalimiyatImages/pexels-a-darmel-8164742.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Aalimiyat</h5>
+            <p class="card-text">Sarf: Asaan Sarf (Hissah Awal)</p>
+            <a href="Course-offered/card6.html" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card" style="width: 100%;">
+          <img src="AalimiyatImages/pexels-rdne-7249178.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Aalimiyat</h5>
+            <p class="card-text">Arabi Adab: Minhaaj-ul-Arabiyah</p>
+            <a href="Course-offered/card7.html" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card" style="width: 100%;">
+          <img src="AalimiyatImages/pexels-rdne-7249367.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Aalimiyat</h5>
+            <p class="card-text">Urdu: Ladkiyon Ka Islami Course</p>
+            <a href="Course-offered/card8.html" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <h3 style="align-items: center; justify-content: center; display: flex; color: white;">Time Tables / Routines</h3>
+  <table class="tablex table table-striped table-dark mx-2">
+    <thead>
+      <tr>
+        <th scope="col">Time</th>
+        <th scope="col">Days</th>
+        <th scope="col">Class Start Time</th>
+        <th scope="col">Class end Time</th>
+        <!-- <th scope="col">second</th> -->
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Monday</td>
+        <td>9:00 AM</td>
+        <td></td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Tuesday</td>
+        <td>9:00 AM</td>
+        <td></td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Wednesday</td>
+        <td>9:00 AM</td>
+        <td></td>
+      </tr>
+      <tr>
+        <th scope="row">4</th>
+        <td>Thursday</td>
+        <td>9:00 AM</td>
+        <td></td>
+      </tr>
+      <tr>
+        <th scope="row">5</th>
+        <td>Friday</td>
+        <td>9:00 AM</td>
+        <td></td>
+      </tr>
+      <tr>
+        <th scope="row">6</th>
+        <td>Saturday</td>
+        <td>9:00 AM</td>
+        <td></td>
+      </tr>
+      <tr>
+        <th scope="row">7</th>
+        <td>Sunday</td>
+        <td>9:00 AM</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+  <div class="container-x" style="background-color: black;">
+    <marquee class="blink" scrollamount="5">
+      <button class="admission-btn">All Features are not Availaible Websites is Under Construction</button>
+    </marquee>
+  </div>
+
+ 
+  <!-- Footer -->
+  <footer class="text-center text-lg-start bg-dark text-muted ">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <span style="color: white;">Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+
+      <!-- Right -->
+      <div>
+        <a href="" class="me-4 text-light" style="text-decoration: none;">
+          <i class="fab fa-facebook-f" style="color: white;"></i> Facebook
+        </a>
+        <a href="" class="me-4 text-light" style="text-decoration: none;">
+          <i class="fab fa-youtube" style="color: white;"></i> YouTube
+        </a>
+        <a href="" class="me-4 text-light" style="text-decoration: none;">
+          <i class="fab fa-instagram" style="color: white;"></i> Instagram
+        </a>
+        <a href="" class="me-4 text-light" style="text-decoration: none;">
+          <i class="fab fa-linkedin" style="color: white;"></i> LinkedIn
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4" style="color: white;">
+              <i class="fas fa-gem me-3"></i>MADRASA ANJUM LIL-BANAAT
+            </h6>
+
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4" style="color: white;">
+              Students Corner
+            </h6>
+            <p style="color: white; font-family: Arial, Helvetica, sans-serif; font-size: large;">
+              <a href="#!" class="text-reset" style="text-decoration: none;"><b>Library Resources</b></a>
+            </p>
+            <p style="color: white; font-family: Arial, Helvetica, sans-serif; font-size: large;">
+              <a href="#!" class="text-reset" style="text-decoration: none;"><b>Facilities</b></a>
+            </p>
+            <p style="color: white; font-family: Arial, Helvetica, sans-serif; font-size: large;">
+              <a href="#!" class="text-reset" style="text-decoration: none;"><b></b></a>
+            </p>
+            <p style="color: white; font-family: Arial, Helvetica, sans-serif; font-size: large;">
+              <a href="#!" class="text-reset" style="text-decoration: none;"><b></b></a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4" style="color: white;">
+              Contact
+            </h6>
+            <p style="color: white; font-family: Arial, Helvetica, sans-serif; font-size: large;">
+              <a href="#!" class="text-reset" style="text-decoration: none;"><b>Blog</b></a>
+            </p>
+            <p style="color: white; font-family: Arial, Helvetica, sans-serif; font-size: large;">
+              <a href="termsCondition.html" class="text-reset" style="text-decoration: none;"><b>Terms & Conditions</b></a>
+            </p>
+            <p style="color: white; font-family: Arial, Helvetica, sans-serif; font-size: large;">
+              <a href="#!" class="text-reset" style="text-decoration: none; "><b>Privacy Policy</b></a>
+            </p>
+            <p style="color: white; font-family: Arial, Helvetica, sans-serif; font-size: large;">
+              <a href="#!" class="text-reset" style="text-decoration: none;"><b></b></a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4" style="color: white;">Contact</h6>
+            <p style="color: white; font-family: Arial, Helvetica, sans-serif; font-size: large;"><i
+                class="fas fa-home me-3"></i><b>Hyderabad, Telangana</b></p>
+            <p style="color: white; font-family: Arial, Helvetica, sans-serif; font-size: large;">
+              <i class="fas fa-envelope me-3"></i>
+              <b> madrasaanjum@gmail.com</b>
+            </p>
+            <p style="color: white; font-family: Arial, Helvetica, sans-serif; font-size: large;"><i
+                class="fas fa-phone me-3"></i> <span><b>Ladies: 8686073959</b></span></p>
+            <p style="color: white; font-family: Arial, Helvetica, sans-serif; font-size: large;"><i
+                class="fas fa-phone me-3"></i><span> <b>Gents contact 1: 9533482794</b></span></p>
+            <p style="color: white; font-family: Arial, Helvetica, sans-serif; font-size: large;"><i
+                class="fas fa-phone me-3"></i><span> <b>Gents contact 2: 8088776077</b></span></p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05); color: white;">
+      © 2024 Copyright:
+      <p>MADRASA ANJUM LIL-BANAAT</p>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
